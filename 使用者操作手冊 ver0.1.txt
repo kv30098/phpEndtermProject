@@ -1,0 +1,14 @@
+uploadimage.php:
+用來填寫要上傳商品資料及圖片，若無誤則會成功進入web1資料庫中。圖片會另外儲存在uploads檔案中(不確定網站正式上線後此方法有沒有用)。
+
+uploadresult.php:
+用來連接資料庫，從uploadimage.php成功上傳的資料將由result傳送進資料庫中。
+
+search.php:
+用來輸入關鍵字並篩選種類。
+
+searchresult.php:
+接收search.php的關鍵字資料及篩選項目，並輸出符合的結果。
+
+web1:
+目前的資料庫，其中有使用者帳號資料(user)、產品(product)、展示物件資料(showfood)
