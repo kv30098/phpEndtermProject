@@ -1,0 +1,100 @@
+/* 內容樣式 */
+.content {
+    flex: 1; /* 確保內容區域填滿剩餘空間 */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.main-content{
+    display: flex;
+    width: 100%;
+
+    margin-top: 50px;
+    margin-left: 250px;
+    padding-left: 30px;
+    
+}
+
+.title{
+    text-align: left;
+    color: #000000;
+    font-size: 3rem;    
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+
+/*細部篩選Part*/
+.base-container{
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.filter-btn{
+    background-color: #fff;
+    padding:  5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    justify-content: space-between;
+    color: black;
+        
+}
+
+.filter-btn:focus{
+    outline: none;
+}
+
+.arror-right{
+    color:#b9b9b9;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.collapse{
+    padding: 0 5px;
+}
+
+
+
+.options-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.options-container a{
+    margin-left: 20px;
+}
+
+.options-container label {
+    margin-left: 5px;
+    flex: 1;
+    cursor: pointer; /* 确保标签可点击 */
+}
+
+.options-container span {
+    margin-right: 20px;
+    display: none; /* 初始隐藏 */
+}
+
+.options-container input:checked + span {
+    display: inline; /* 当输入被选中时显示 */
+}
+
+.options-container input {
+    display: none;
+}
+    
+.option-pic{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
