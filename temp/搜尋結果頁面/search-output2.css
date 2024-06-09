@@ -1,0 +1,334 @@
+/* 內容樣式 */
+.content {
+    flex: 1; /* 確保內容區域填滿剩餘空間 */
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.main-content{
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.title{
+    text-align: center;
+    color: #ffffff;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+/*內容*/
+
+.container{
+    margin: 0;
+}
+
+/*左邊*/
+.left{ 
+    height: 100px;
+}
+
+/*按鈕*/
+.btn-group{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.collect{
+    margin-right: 10px;
+}
+
+
+.btn-group button{
+    border: none;
+    border-radius: 7px;
+    padding: 10px 5px;
+    background-color: #BC4B51;
+}
+.btn-group button:hover{
+    background-color: #FFC619;
+}
+
+.btn-group button:active{
+    border: none;
+}
+
+.btn-group button:focus{
+    outline: 0 !important;
+}
+
+.bt span{
+    padding: 0px 2px;
+}
+
+
+.btn-group a{
+    color: #fff;
+}
+
+.btn-group a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+}
+
+.btn-group a:hover{
+    color: #ffffff;
+}
+
+
+
+
+
+
+/*右邊*/
+
+.search-container{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.output-title .Ltitle{
+    font-size: 2.3rem;
+}
+
+.output-title .Rtitle{
+    border: 1px solid #000000;
+    border-radius: 12px;
+    font-size: 1rem;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+
+/* 頁尾樣式 */
+footer {
+    height: 120px;
+    background-color: #FFC619;
+    color: #fff;
+    margin-top: 30px;
+}
+
+
+/*分隔條*/
+.divider{
+    border: 1px solid #484848;
+    margin: 0 5px;
+    
+}
+
+/*搜尋條部分*/
+.search-bar{
+    background-color: #D9D9D9;
+    width: 20rem;
+    border: none    ;
+}
+
+.search-bar::placeholder{
+    color: #000000;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search-bar-form {
+    background-color: #D9D9D9;
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0.3rem 0;
+    gap: 10px;
+}
+
+
+
+.search{
+    display: flex;
+    justify-items: center;
+    padding: 0;
+}
+
+/*篩選部分*/
+.select{
+    display: flex;
+    
+    justify-content: center;
+}
+
+.select-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.select-btn, .options li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-btn {
+    padding:  10px 40px 10px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    justify-content: space-between;
+    color: #000000;
+}
+
+
+.select-btn .filter {
+    display: flex;
+    padding: 0 20px 0 0;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.select-btn .polygon{
+    display: flex;
+    padding-left:50px;
+    width: 50px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.select-content {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    top: 50px;
+    width: 200px;
+    background-color: #ffffff;
+    transition: display 0.3s ease;
+    border-radius: 7px;
+    padding: 0 10px;
+}
+
+.select-content.show {
+    display: block;
+}
+
+.select-option{
+    width: 100%;
+}
+
+.select-option hr{ 
+    margin: 0.5rem 0;
+}
+
+.filter-form{
+    background-color: #fff;
+}
+
+.select-btn i {
+    transition: transform 0.2s linear;
+}
+
+hr{
+    padding-bottom: 5px;
+}
+
+/*細部篩選Part*/
+.base-container{
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.filter-btn{
+    background-color: #fff;
+    padding:  5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    justify-content: space-between;
+    color: black;
+        
+}
+
+.filter-btn:focus{
+    outline: none;
+}
+
+.arror-right{
+    color:#b9b9b9;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.collapse{
+    padding: 0 5px;
+}
+
+
+
+.options-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.options-container a{
+    margin-left: 20px;
+}
+
+.options-container label {
+    margin-left: 5px;
+    flex: 1;
+    cursor: pointer; /* 确保标签可点击 */
+}
+
+.options-container span {
+    margin-right: 20px;
+    display: none; /* 初始隐藏 */
+}
+
+.options-container input:checked + span {
+    display: inline; /* 当输入被选中时显示 */
+}
+
+.options-container input {
+    display: none;
+}
+    
+.option-pic{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+
+/*送出*/
+.submit{
+    color: #ffffff;
+    border: none;
+    background-color: #BC4B51;
+    margin-left: 10px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+}
